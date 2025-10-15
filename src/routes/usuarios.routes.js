@@ -12,7 +12,7 @@ router.put("/:id", verificarToken, actualizarUsuario);
 
 // Solo los ADMIN pueden crear nuevos usuarios
 // router.post("/", verificarToken, verificarRol(["admin"]), createUsuario);
-router.post("/", verificarToken,createUsuario);
+router.post("/", verificarToken, createUsuario);
 
 // Solo los ADMIN pueden eliminar usuarios
 router.delete("/:id", verificarToken, verificarRol(["admin"]), deleteUsuario);

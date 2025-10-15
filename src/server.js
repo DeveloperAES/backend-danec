@@ -5,6 +5,7 @@ import { pool } from "./config/db.js";
 import usuariosRoutes from "./routes/usuarios.routes.js";
 import authRoutes from "./routes/auth.routes.js";
 
+
 dotenv.config();
 
 const app = express();
