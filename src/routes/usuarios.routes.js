@@ -17,4 +17,7 @@ router.post("/", verificarToken, createUsuario);
 // Solo los ADMIN pueden eliminar usuarios
 router.delete("/:id", verificarToken, verificarRol(["admin"]), deleteUsuario);
 
+
+
+
 export default router;
