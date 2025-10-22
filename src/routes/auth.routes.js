@@ -35,6 +35,7 @@ router.get("/verify", verificarToken, async (req, res) => {
         perfil: usuario.perfil,
         correo: usuario.correo,
         rol: usuario.rol,
+        puntos_totales: usuario.puntos_totales,
       },
     });
   } catch (error) {
